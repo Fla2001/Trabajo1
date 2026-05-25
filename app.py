@@ -27,31 +27,36 @@ menu = st.sidebar.selectbox(
 # HOME
 # =====================================================
 
+
 if menu == "Home":
-    
-    st.title("Proyecto Aplicado en Streamlit")
-    st.subheader("Especialización Python for Analytics")
-    st.write("Desarrollado por: Flavia Valencia")
+
+    col1, col2 = st.columns([1,3])
+
+    with col1:
+        st.image("DMC.png", width=180)
+
+    with col2:
+        st.title("Proyecto Aplicado en Streamlit")
+        st.subheader("Python Fundamentals")
+
+    st.markdown("---")
+
+    st.write("👩‍💻 Desarrollado por: Flavia Mercedes Valencia Carhuas")
 
     st.markdown("""
-    ### Descripción
-    Esta aplicación fue desarrollada como parte del Proyecto 1 del módulo Python Fundamentals.
+    ### 📌 Descripción del Proyecto
 
-    La aplicación integra:
-    - Variables
-    - Estructuras de datos
-    - Funciones
-    - Programación Orientada a Objetos
-    - Streamlit
-    - NumPy y Pandas
+    Esta aplicación fue desarrollada utilizando Python y Streamlit
+    como parte del Proyecto 1 del módulo Python Fundamentals.
 
-    ### Tecnologías utilizadas
+    ### 🚀 Tecnologías utilizadas
+
     - Python
     - Streamlit
     - Pandas
     - NumPy
+    - Programación Orientada a Objetos
     """)
-
 # =====================================================
 # EJERCICIO 1
 # =====================================================
